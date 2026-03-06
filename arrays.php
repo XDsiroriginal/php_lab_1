@@ -16,8 +16,10 @@
     $_intArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     echo 'чётные элементы массива: ';
-    for($_i = 0; $_i < count($_intArr); $_i+= 2) {
-        echo $_intArr[$_i] . " ";
+    for($_i = 0; $_i < count($_intArr); $_i++) {
+        if ($_intArr[$_i] % 2 === 0) {
+            echo $_intArr[$_i] . " ";
+        }
     }
 
     $_students = [
