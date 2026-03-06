@@ -23,7 +23,7 @@
 
     echo gettype($_int) . ": " . $_int . "<br>" . gettype($_float) . ": " . $_float . "<br>" . gettype($_string) . ": " . $_string . "<br>" . gettype($_bool) . ": " . $_bool . "<br>" . gettype($_null) . ": " . $_null;
     echo "<br><br> неявное преобразование: " . $_numberString + $_int;
-    echo "<br> явное преобразование: " . (int)$_float + $_int;
+    echo "<br> явное преобразование: " . (int)$_float;
     echo "<br><br> Проверка, существует ли переменная: " . (isset($_noIsSet) ? 'есть' : 'нету');
     $_noIsSet = 'isSet';
     echo "<br> emty(): " . (empty($_noIsSet) ? 'нету' : $_noIsSet);
